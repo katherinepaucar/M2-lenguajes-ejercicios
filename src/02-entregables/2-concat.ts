@@ -21,4 +21,4 @@ const concatV2 = (...array) => {
 }; 
 
 console.log('Opcional - concat: ', concatV2(fruits, animals, numbers));
-console.log('------------------------INICIO EJERCICIO 2-----------------------');
+console.log('------------------------FIN  EJERCICIO 2-----------------------');
