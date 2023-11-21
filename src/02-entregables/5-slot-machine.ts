@@ -20,10 +20,11 @@ class SlotMachine {
     return Math.random() >= 0.5;
   }
 }
-
+console.log('--------------INICIO EJERCICIO 5------------------------');
 const machine1 = new SlotMachine();
 machine1.play(); // "Good luck next time!!"
 machine1.play(); // "Good luck next time!!"
 machine1.play(); // "Congratulations!!!. You won 3 coins!!"
 machine1.play(); // "Good luck next time!!"
 machine1.play(); // "Congratulations!!!. You won 2 coins!!"
+console.log('--------------FIN EJERCICIO 5------------------------');
