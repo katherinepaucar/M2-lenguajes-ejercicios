@@ -10,7 +10,8 @@ function isBookRead(books: BookModel[], titleToSearch: string) {
     { title: "Devastación", isRead: true },
   ];
 
-  console.log('-------EJERCICIO CON TYPESCRIPT--');
+  console.log('-------INICIO EJERCICIO 4 CON TIPADO----------------');
   console.log(isBookRead(books, "Devastación")); // true
   console.log(isBookRead(books, "Canción de hielo y fuego")); // false
   console.log(isBookRead(books, "Los Pilares de la Tierra")); // false
+  console.log('------ FIN EJERCICIO 4 CON TIPADO-------------------');

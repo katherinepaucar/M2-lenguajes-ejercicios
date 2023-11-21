@@ -1,3 +1,4 @@
+console.log('--------------INICIO EJERCICIO 4 SIN TIPADO------------------------');
 function isBookRead(books, titleToSearch) {
 
     const found = books.find((book) => book.title === titleToSearch);
@@ -13,4 +14,4 @@ function isBookRead(books, titleToSearch) {
   console.log(isBookRead(books, "Devastación")); // true
   console.log(isBookRead(books, "Canción de hielo y fuego")); // false
   console.log(isBookRead(books, "Los Pilares de la Tierra")); // false
-console.log('--------------------------------------');
+  console.log('--------------FIN EJERCICIO 4 SIN TIPADO------------------------');
