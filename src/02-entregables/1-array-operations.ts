@@ -1,18 +1,18 @@
+console.log('------------------------INICIO EJERCICIO 1-----------------------');
 // --------HEAD---------
-const head = (array) => {
+const head = <T>(array: Array<T>) => {
     const [first] = array;
     return first
 };
 
-const names = ["Maria","Katherine", "Lola"];
-const ages = [61,32, 18];
-
+const names: string[] = ["Maria","Katherine", "Lola"];
+const ages: number[]= [61,32, 18];
 console.log('HEAD names:',head(names));
 console.log('HEAD ages:',head(ages));
 console.log('---------------------------------');
 
 //---------Tail-------------
-const tail = (array) => {
+const tail = <T>(array: Array<T>) => {
     const [,...data] = array;
     return data;
 
@@ -21,7 +21,7 @@ console.log('TAIL names:',tail(names));
 console.log('TAIL ages:',tail(ages));
 console.log('---------------------------------');
 //------ INIT --------------
-const init = (data) => {
+const init = <T>(data: Array<T>) => {
     const  result = data.slice(0, data.length - 1);
     return result;
 };
@@ -29,10 +29,10 @@ console.log('INIT names:',init(names));
 console.log('INIT ages:', init(ages));
 console.log('---------------------------------');
 //------ LAST --------------
-const last = (data) => {
+const last = <T>(data: Array<T>) => {
     const  last =  data.slice(data.length - 1);
     return last;
 };
 console.log('LAST names:',last(names));
 console.log('LAST ages:', last(ages));
-console.log('---------------------------------');
+console.log('------------------------FIN EJERCICIO 1-----------------------');
