@@ -1,8 +1,12 @@
 import { BookModel } from "./models/book.model";
 function isBookRead(books: BookModel[], titleToSearch: string) {
 
-    const found = books.find((book: BookModel) => book.title === titleToSearch);
-    return found ? found.isRead : false;
+    if(Array.isArray(books) && books.length > 0){
+      const found = books.find((book: BookModel) => book.title === titleToSearch);
+      return found ? found.isRead : false;
+    }
+    return 'No es un array o es un array vacío';
+
   }
   const books: BookModel[] = [
     { title: "Harry Potter y la piedra filosofal", isRead: true },
