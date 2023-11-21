@@ -1,8 +1,11 @@
 console.log('--------------INICIO EJERCICIO 4 SIN TIPADO------------------------');
 function isBookRead(books, titleToSearch) {
-
+  if(Array.isArray(books) && books.length > 0){
     const found = books.find((book) => book.title === titleToSearch);
     return found ? found.isRead : false;
+  }
+  return 'No es un array o es un array vacío';
+
   }
   const books = [
     { title: "Harry Potter y la piedra filosofal", isRead: true },
